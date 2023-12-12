@@ -12,4 +12,5 @@
 */
 
 let student = {name: 'Carlos', age: 12, weight: 69.5, isSubscribed: true}
+
 console.log(`${student.name} tem ${student.age} anos e pesa ${student.weight}kg.`);
