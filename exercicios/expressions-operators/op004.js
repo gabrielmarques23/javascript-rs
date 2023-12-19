@@ -1,16 +1,26 @@
-//Operadores lógicos (logical operators)
+//Operador Condicional (Ternário)
 
-// 2 valores booleanos, quando verificados, resultara em verdadeiro ou falso.
+//Dependendo da condição, nós recebemos valores diferentes
 
+//Condição então valor 1 se for valor 2 
+//Condition ? value1 : value2
+
+//Exemplos: 
+//Café da manhã bom
+
+/*
 let pao = true
-let queijo = false 
+let queijo = false
 
-// AND(E) > &&
-console.log(pao && queijo)
+const niceBreakfast = pao || queijo ? 'Café da manhã bom' : 'Café da manhã ruim'
 
+console.log(niceBreakfast)
+*/
 
-// OR(OU) > ||
-console.log(pao || queijo)
+//Maior de 18
 
-// NOT(NÃO) > !   (Operador de negação)
-console.log(!queijo)
+let age = 21 
+
+const canDrive = age >= 18 ? 'can drive' : "can't drive"
+console.log (canDrive)
+ 
