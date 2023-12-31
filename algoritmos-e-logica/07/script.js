@@ -32,16 +32,41 @@ Variáveis:
 let lista = []
 let opcoes = Number(window.prompt(`Olá usuário! Digite o número da opção desejada
 
-    1. Cadastrar um item na lista 
-    2. Mostrar itens cadastrados
-    3. Sair do programa`));
+1. Cadastrar um item na lista 
+2. Mostrar itens cadastrados
+3. Sair do programa`));
+
+/*
+//Usando o switch para fazer a mesma função do "while"
+
+switch (option) {
+        case 1:
+            let item = prompt('Digite o nome do item')
+            items.push(item)
+            break
+            case 2:
+            if (items.length == 0) {
+                window.alert("[ERRO] Não existem itens cadastrados")
+            } else {
+                window.alert(items)
+            }
+            break
+            case 3:
+                window.alert("Tchau")
+                break
+                default:
+                    alert("Opção inválida. Tente novamente")
+                    // caminho padrão quando não é um dos casos acima
+    }
+    
+*/
 
 
 let option;
 let items = [];
 
-while(option != 3){
-    
+while (option != 3) {
+
     option = Number(window.prompt(`
     Olá usuário! Digite o número da opção desejada
     
@@ -50,19 +75,17 @@ while(option != 3){
     3. Sair do programa
     `))
 
-if (option == 1) {
-    let item = prompt('Digite o nome do item')
-    items.push(item)
-} else if (option == 2) {
-    if (items.length == 0) {
-        window.alert("[ERRO] Não existem itens cadastrados")
+    if (option == 1) {
+        let item = prompt('Digite o nome do item')
+        items.push(item)
+    } else if (option == 2) {
+        if (items.length == 0) {
+            window.alert("[ERRO] Não existem itens cadastrados")
+        } else {
+            window.alert(items)
+        }
     } else {
-        window.alert(items)
+        window.alert("Tchau")
     }
-} else{
-    window.alert("Tchau")
-}
 
 }
-
-*/

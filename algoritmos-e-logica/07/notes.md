@@ -11,3 +11,9 @@ Perguntas a serem feitas:
 
 # Ferramentas da linguagem que abordaremos
 
+[] loop while
+[] arrays e funções de arrays 
+[] condicional switch e if/else 
+[] template literals (strings)
+
+
